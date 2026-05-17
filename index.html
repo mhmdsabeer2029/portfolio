@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#06080f" />
+  <title>Mohamed Saber Abbas Elsayed — Frontend Engineer · Computer & Systems Engineering</title>
+  <meta name="description" content="Portfolio of Mohamed Saber Abbas Elsayed — Computer & Systems Engineering student at Alexandria University, frontend engineering trainee at Capgemini, building production-grade web applications, AI products, and low-level systems." />
+  <meta name="author" content="Mohamed Saber Abbas Elsayed" />
+  <meta property="og:title" content="Mohamed Saber Abbas Elsayed — Portfolio" />
+  <meta property="og:description" content="Computer & Systems Engineering student at Alexandria University. Frontend developer. Algorithm enthusiast. AI builder." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div id="progress-bar" aria-hidden="true"></div>
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav-wrap" id="nav">
+  <a class="brand" href="#top" aria-label="Mohamed Saber Abbas Elsayed">
+    <span class="brand-mark">M.S.</span>
+    <span class="brand-name">Mohamed Saber</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="cv-btn" href="cv/Mohamed_Saber_Abbas_Elsayed_CV.pdf" download aria-label="Download curriculum vitae">
+    <span>Download CV</span>
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+      <path d="M12 4v12m0 0l-5-5m5 5l5-5M4 20h16"/>
+    </svg>
+  </a>
+  <button class="nav-toggle" id="nav-toggle" aria-controls="nav-links-mobile" aria-expanded="false" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="nav-mobile" id="nav-links-mobile" aria-hidden="true">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#work">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+  <a class="cv-btn cv-btn-mobile" href="cv/Mohamed_Saber_Abbas_Elsayed_CV.pdf" download>
+    <span>Download CV</span>
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 4v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>
+  </a>
+</div>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top" aria-label="Introduction">
+    <div class="container">
+      <div class="hero-card">
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-eyebrow"><span class="hr"></span>Portfolio · 2026</p>
+            <h1 class="hero-title">
+              <span>MOHAMED</span>
+              <span class="accent">SABER</span>
+              <span class="muted">ELSAYED</span>
+            </h1>
+            <p class="hero-role">Frontend Engineer · Computer &amp; Systems Engineering, Alexandria University</p>
+
+            <div class="hero-actions" aria-label="Quick links">
+              <a class="arrow-btn" href="https://github.com/mhmdsabeer2029" target="_blank" rel="noopener" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7M9 7h8v8"/>
+                </svg>
+              </a>
+              <a class="arrow-btn" href="https://leetcode.com/u/MohamedSaber123/" target="_blank" rel="noopener" aria-label="LeetCode profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7M9 7h8v8"/>
+                </svg>
+              </a>
+              <a class="arrow-btn" href="https://dist-lykkvdkb.devinapps.com" target="_blank" rel="noopener" aria-label="JARVIS AI live demo">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7M9 7h8v8"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-photo">
+            <img src="assets/profile.jpg" alt="Portrait of Mohamed Saber Abbas Elsayed" />
+            <div class="hero-photo-fade" aria-hidden="true"></div>
+            <div class="hero-tag">
+              <span class="dot"></span>
+              Available for opportunities
+            </div>
+          </div>
+
+          <aside class="hero-about" id="about" aria-label="About me">
+            <small>ABOUT ME</small>
+            <p>I build production-grade web applications, AI-integrated products, and low-level systems — currently training under a Senior Frontend Engineer at <strong>Capgemini</strong> while maintaining a <strong>3.97 / 4.0</strong> GPA at Alexandria University. I solve Hard-tier problems on LeetCode and ship work that is correct, fast, and beautifully crafted.</p>
+          </aside>
+        </div>
+
+        <div class="hero-meta">
+          <div><small>LOCATION</small><strong>Alexandria, Egypt</strong></div>
+          <div><small>GPA</small><strong>3.97 / 4.0</strong></div>
+          <div><small>FOCUS</small><strong>Frontend · Systems · AI</strong></div>
+          <div><small>STATUS</small><strong>Open to collaborations</strong></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#principles" aria-label="Scroll to principles">
+        <span>SCROLL</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 5v14m0 0l-6-6m6 6l6-6"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== PRINCIPLES ===================== -->
+  <section class="principles" id="principles">
+    <div class="container">
+      <p class="kicker"><span class="num">01</span> Engineering Principles</p>
+      <h2 class="section-title">Motivation of Works</h2>
+
+      <div class="principles-grid">
+        <div class="principle reveal">
+          <span class="ptag" style="--c:#5da7ff"></span>
+          <h3>Engineering Discipline</h3>
+          <p>Strong fundamentals in data structures, algorithms, and computer architecture — applied to build correct, reliable systems.</p>
+        </div>
+        <div class="principle reveal" style="--d:.05s">
+          <span class="ptag" style="--c:#4ad8b3"></span>
+          <h3>Frontend Craftsmanship</h3>
+          <p>Pixel-accurate interfaces in vanilla JavaScript and modern frameworks. Performance, accessibility, and polish are non-negotiable.</p>
+        </div>
+        <div class="principle reveal" style="--d:.1s">
+          <span class="ptag" style="--c:#e7c651"></span>
+          <h3>Shipped, Not Theoretical</h3>
+          <p>End-to-end products: from hand-rolled C engines to deployed AI assistants and live client websites used in production.</p>
+        </div>
+        <div class="principle reveal" style="--d:.15s">
+          <span class="ptag" style="--c:#b06bff"></span>
+          <h3>Continuous Improvement</h3>
+          <p>Mentored by a Senior Frontend Engineer at Capgemini. Hard-tier problems on LeetCode. Always raising the bar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <p class="kicker"><span class="num">02</span> Experience</p>
+      <h2 class="section-title">Mentorship &amp; Training</h2>
+
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <span class="exp-date">APRIL 2026 &mdash; PRESENT</span>
+          <span class="exp-tag">PAID TRAINEE · REMOTE</span>
+        </div>
+        <h3 class="exp-title">Frontend Engineering Trainee</h3>
+        <p class="exp-sub">Mentorship under <strong>Eng. Amr Matar</strong> — Senior Frontend Engineer, <strong>Capgemini</strong>.</p>
+        <ul class="exp-list">
+          <li>Working through a structured, mentor-led curriculum to adopt a senior-level approach to modern frontend engineering.</li>
+          <li>Practising production-grade patterns in JavaScript, component architecture, performance, and UI engineering.</li>
+          <li>Delivering project iterations each cycle and receiving direct technical review on code quality, structure, and design decisions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED WORK ===================== -->
+  <section class="featured" id="work">
+    <div class="container">
+      <p class="kicker"><span class="num">03</span> Selected Work</p>
+      <div class="featured-head">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">A curated set of academic, client, and personal engineering — each linked to its live demo or source.</p>
+      </div>
+
+      <div class="featured-grid">
+        <article class="feat-card reveal">
+          <div class="feat-media feat-media-1">
+            <span class="feat-num">01</span>
+            <div class="feat-tag">CLIENT · LIVE</div>
+            <a class="feat-launch" href="https://mhmdsabeer2029.github.io/ScriptFlow/" target="_blank" rel="noopener" aria-label="Open ScriptFlow live">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <div class="feat-body">
+            <h3>ScriptFlow</h3>
+            <p>Premium SaaS landing platform — four interlinked pages with zero external dependencies, HTML5 particle hero, custom cursor, and a luxurious dark-navy + gold visual system.</p>
+            <ul class="feat-tech"><li>HTML5</li><li>CSS3</li><li>Vanilla JS</li><li>Canvas API</li></ul>
+            <div class="feat-links">
+              <a href="https://mhmdsabeer2029.github.io/ScriptFlow/" target="_blank" rel="noopener">Live demo →</a>
+              <a href="https://github.com/mhmdsabeer2029/ScriptFlow" target="_blank" rel="noopener">Source →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="feat-card reveal" style="--d:.05s">
+          <div class="feat-media feat-media-2">
+            <span class="feat-num">02</span>
+            <div class="feat-tag">AI · LIVE</div>
+            <a class="feat-launch" href="https://dist-lykkvdkb.devinapps.com" target="_blank" rel="noopener" aria-label="Open JARVIS live">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <div class="feat-body">
+            <h3>JARVIS — AI Assistant</h3>
+            <p>Full-stack conversational AI with native KaTeX math rendering, Computer Modern typography, multi-conversation workspace, sidebar pinning, and a ~500&nbsp;ms first-token streaming pipeline.</p>
+            <ul class="feat-tech"><li>Python</li><li>FastAPI</li><li>Groq API</li><li>KaTeX</li></ul>
+            <div class="feat-links">
+              <a href="https://dist-lykkvdkb.devinapps.com" target="_blank" rel="noopener">Live demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="feat-card reveal" style="--d:.1s">
+          <div class="feat-media feat-media-3">
+            <span class="feat-num">03</span>
+            <div class="feat-tag">CLIENT · LIVE</div>
+            <a class="feat-launch" href="https://agent-istanbul.com" target="_blank" rel="noopener" aria-label="Open Agent Istanbul live">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <div class="feat-body">
+            <h3>Agent Istanbul</h3>
+            <p>Live production marketing platform for a Turkish multi-service agency operating across healthcare registration, real-estate, agriculture, textiles, marble sourcing, and digital services.</p>
+            <ul class="feat-tech"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive</li></ul>
+            <div class="feat-links">
+              <a href="https://agent-istanbul.com" target="_blank" rel="noopener">Live demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="feat-card reveal" style="--d:.15s">
+          <div class="feat-media feat-media-4">
+            <span class="feat-num">04</span>
+            <div class="feat-tag">CLIENT · LIVE</div>
+            <a class="feat-launch" href="https://nokhbat.ayaxd.com" target="_blank" rel="noopener" aria-label="Open Nokhbat live">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <div class="feat-body">
+            <h3>Nokhbat — UpSkill Academy</h3>
+            <p>Educational e-learning storefront covering eight knowledge tracks with course listings, ratings, lifetime-access bundles, instructor highlights, and a polished conversion flow.</p>
+            <ul class="feat-tech"><li>Web</li><li>PHP</li><li>JavaScript</li><li>Responsive UI</li></ul>
+            <div class="feat-links">
+              <a href="https://nokhbat.ayaxd.com" target="_blank" rel="noopener">Live demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="feat-card reveal" style="--d:.2s">
+          <div class="feat-media feat-media-5">
+            <span class="feat-num">05</span>
+            <div class="feat-tag">ACADEMIC · C / SDL2</div>
+            <a class="feat-launch" href="https://github.com/mhmdsabeer2029/Chess_by_C" target="_blank" rel="noopener" aria-label="Open Chess Engine source">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <div class="feat-body">
+            <h3>Professional Chess Engine</h3>
+            <p>100% FIDE-compliant chess engine and GUI engineered from the ground up in C — castling, en passant, promotion, threefold repetition, insufficient material, checkmate, stalemate, and FEN serialisation. Three-layer modular architecture with O(1) check detection.</p>
+            <ul class="feat-tech"><li>C</li><li>SDL2</li><li>SDL_mixer</li><li>GNU Make</li></ul>
+            <div class="feat-links">
+              <a href="https://github.com/mhmdsabeer2029/Chess_by_C" target="_blank" rel="noopener">Source →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="feat-card reveal" style="--d:.25s">
+          <div class="feat-media feat-media-6">
+            <span class="feat-num">06</span>
+            <div class="feat-tag">AI · COMPUTER VISION</div>
+          </div>
+          <div class="feat-body">
+            <h3>Neural Hand Tracking</h3>
+            <p>Real-time MediaPipe hand-skeleton tracking with a cyberpunk HUD — 21-point landmark detection over live video, finger-state classification, gesture recognition, confidence telemetry, gesture history, and an AI analysis pane.</p>
+            <ul class="feat-tech"><li>MediaPipe</li><li>JavaScript</li><li>Canvas</li><li>WebRTC</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATALOGUE ===================== -->
+  <section class="catalogue" id="more-work">
+    <div class="container">
+      <p class="kicker"><span class="num">04</span> Project Catalogue</p>
+      <h2 class="section-title">Personal &amp; Academic Builds</h2>
+
+      <div class="cat-grid">
+        <article class="cat-card reveal">
+          <div class="cat-head"><span class="cat-tag">PERSONAL</span></div>
+          <h3>Quran Web Application</h3>
+          <p>Feature-rich single-page Quran reader and study companion. Self-built in vanilla JavaScript across a single-page architecture, with typography-first reading interface, search, and an engineering-law revision module.</p>
+          <ul class="cat-tech"><li>HTML5</li><li>CSS3</li><li>Vanilla JS</li><li>SPA</li></ul>
+        </article>
+
+        <article class="cat-card reveal" style="--d:.05s">
+          <div class="cat-head">
+            <span class="cat-tag">PERSONAL · AI</span>
+            <a class="ext" href="https://github.com/mhmdsabeer2029/Worlde-Project" target="_blank" rel="noopener" aria-label="Wordle source">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.18c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.74.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.9-.39.99 0 1.98.13 2.9.39 2.21-1.5 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56 4.56-1.52 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+          </div>
+          <h3>Wordle Game &amp; AI Solver</h3>
+          <p>Complete Wordle clone built in Pygame paired with an entropy-aware solver — colour-coded feedback, duplicate-letter handling, an in-game restart flow, and a custom letter-frequency and positional-score search routine averaging four guesses.</p>
+          <ul class="cat-tech"><li>Python</li><li>Pygame</li><li>Algorithms</li></ul>
+        </article>
+
+        <article class="cat-card reveal" style="--d:.1s">
+          <div class="cat-head"><span class="cat-tag">AUTOMATION</span></div>
+          <h3>Gmail Deadline Tracker</h3>
+          <p>Self-hosted automation workflow built on n8n, deployed locally via Docker. Reads a live Google Sheet of academic assignments, computes time-to-deadline, and dispatches Gmail reminders on a precise schedule.</p>
+          <ul class="cat-tech"><li>n8n</li><li>Docker</li><li>Google Sheets API</li><li>Gmail API</li></ul>
+        </article>
+
+        <article class="cat-card reveal" style="--d:.15s">
+          <div class="cat-head">
+            <span class="cat-tag">ACADEMIC</span>
+            <a class="ext" href="https://github.com/mhmdsabeer2029/Signals_project" target="_blank" rel="noopener" aria-label="LZ77 compressor source">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.18c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.74.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.9-.39.99 0 1.98.13 2.9.39 2.21-1.5 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56 4.56-1.52 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+          </div>
+          <h3>DEFLATE Compressor — LZ77</h3>
+          <p>Stage 1 of a four-stage simplified DEFLATE compressor implemented for the Information Theory course at Alexandria University — 32 KB sliding-window encoder, hash-accelerated match lookup, candidate pruning, and lossless byte-level reconstruction.</p>
+          <ul class="cat-tech"><li>Python</li><li>Compression</li><li>Information Theory</li></ul>
+        </article>
+
+        <article class="cat-card reveal" style="--d:.2s">
+          <div class="cat-head"><span class="cat-tag">ACADEMIC</span></div>
+          <h3>8-bit Arithmetic Logic Unit</h3>
+          <p>Gate-level ALU designed and verified in Logisim as part of the Digital Logic Design course. Arithmetic and bitwise operations, status flags, and a control-driven operation select — built bottom-up from primitive gates.</p>
+          <ul class="cat-tech"><li>Logisim</li><li>Digital Logic</li><li>Computer Architecture</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <p class="kicker"><span class="num">05</span> Toolkit</p>
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-cell reveal">
+          <h4>Languages</h4>
+          <ul><li>C</li><li>Python</li><li>JavaScript (ES6+)</li><li>HTML5</li><li>CSS3</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-cell reveal" style="--d:.05s">
+          <h4>Frontend &amp; UI</h4>
+          <ul><li>Vanilla JS Engineering</li><li>React</li><li>Tailwind CSS</li><li>Responsive Design</li><li>Canvas API</li><li>Accessibility</li></ul>
+        </div>
+        <div class="skill-cell reveal" style="--d:.1s">
+          <h4>Backend &amp; Tooling</h4>
+          <ul><li>FastAPI</li><li>Node.js</li><li>REST APIs</li><li>Docker</li><li>n8n</li><li>Git / GitHub</li></ul>
+        </div>
+        <div class="skill-cell reveal" style="--d:.15s">
+          <h4>Systems &amp; Algorithms</h4>
+          <ul><li>Data Structures</li><li>Algorithms</li><li>SDL2</li><li>Pygame</li><li>Information Theory</li><li>Digital Logic</li></ul>
+        </div>
+        <div class="skill-cell reveal" style="--d:.2s">
+          <h4>AI &amp; Computer Vision</h4>
+          <ul><li>Groq LLM API</li><li>MediaPipe</li><li>KaTeX</li><li>LLM Application Design</li><li>Prompt Engineering</li></ul>
+        </div>
+        <div class="skill-cell reveal" style="--d:.25s">
+          <h4>Engineering Practices</h4>
+          <ul><li>Clean Architecture</li><li>Code Review</li><li>Performance Tuning</li><li>Cross-platform Build</li><li>Technical Writing</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION + ACHIEVEMENTS + LANGUAGES ===================== -->
+  <section class="education" id="education">
+    <div class="container">
+      <p class="kicker"><span class="num">06</span> Background</p>
+      <h2 class="section-title">Education &amp; Achievements</h2>
+
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <div class="edu-date">2023 &mdash; 2028 (EXPECTED)</div>
+          <h3>B.Sc. in Computer &amp; Systems Engineering</h3>
+          <p class="edu-sub">Faculty of Engineering, <strong>Alexandria University</strong></p>
+          <ul>
+            <li>Cumulative GPA: <strong>3.97 / 4.0</strong></li>
+            <li>Core coursework: Programming I &amp; II, Data Structures, Algorithms, Computer Architecture, Digital Logic Design, Information Theory, Signals &amp; Systems.</li>
+            <li>Selected academic projects: Chess Engine (C / SDL2), LZ77 Compressor, 8-bit ALU.</li>
+          </ul>
+        </article>
+
+        <aside class="edu-side reveal" style="--d:.1s">
+          <div class="edu-pane">
+            <h4>Competitive Programming</h4>
+            <p>Active problem solver on <a href="https://leetcode.com/u/MohamedSaber123/" target="_blank" rel="noopener">LeetCode</a> and <a href="https://www.hackerrank.com/profile/mhmdsabeer2029" target="_blank" rel="noopener">HackerRank</a> — including solved Hard-tier problems on LeetCode.</p>
+          </div>
+          <div class="edu-pane">
+            <h4>Languages</h4>
+            <ul class="langs">
+              <li><span>Arabic</span><em>Native</em></li>
+              <li><span>English</span><em>C1+</em></li>
+              <li><span>French</span><em>A1</em></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA + CONTACT ===================== -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-copy">
+          <p class="kicker light"><span class="num">07</span> Let's Build</p>
+          <h2 class="cta-title">Need a frontend engineer who ships?<br/>Let's talk.</h2>
+          <p class="cta-sub">Available for internships, frontend engineering opportunities, and ambitious collaborations.</p>
+          <a class="cta-btn" href="mailto:mhmdsabeer2029@gmail.com">
+            <span>Contact Now</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+        <div class="cta-plasma" aria-hidden="true">
+          <img src="assets/gradients/plasma.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-cell reveal" href="mailto:mhmdsabeer2029@gmail.com">
+          <small>EMAIL</small>
+          <strong>mhmdsabeer2029@gmail.com</strong>
+        </a>
+        <a class="contact-cell reveal" style="--d:.05s" href="tel:+201226150277">
+          <small>PHONE</small>
+          <strong>+20 122 615 0277</strong>
+        </a>
+        <a class="contact-cell reveal" style="--d:.1s" href="https://github.com/mhmdsabeer2029" target="_blank" rel="noopener">
+          <small>GITHUB</small>
+          <strong>github.com/mhmdsabeer2029</strong>
+        </a>
+        <a class="contact-cell reveal" style="--d:.15s" href="https://leetcode.com/u/MohamedSaber123/" target="_blank" rel="noopener">
+          <small>LEETCODE</small>
+          <strong>MohamedSaber123</strong>
+        </a>
+        <a class="contact-cell reveal" style="--d:.2s" href="https://www.hackerrank.com/profile/mhmdsabeer2029" target="_blank" rel="noopener">
+          <small>HACKERRANK</small>
+          <strong>mhmdsabeer2029</strong>
+        </a>
+        <a class="contact-cell reveal" style="--d:.25s" href="cv/Mohamed_Saber_Abbas_Elsayed_CV.pdf" download>
+          <small>RESUME</small>
+          <strong>Download PDF</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="foot-brand">
+      <span class="brand-mark">M.S.</span>
+      <p>Engineered &amp; written by Mohamed Saber Abbas Elsayed — <span id="year">2026</span>. Crafted with care in Alexandria, Egypt.</p>
+    </div>
+    <div class="foot-meta">
+      <span>Computer &amp; Systems Engineering · Alexandria University</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
