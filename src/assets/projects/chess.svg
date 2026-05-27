@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ch-bg" x1="0" y1="0" x2="600" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0F"/>
+      <stop offset="1" stop-color="#1C1C28"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#ch-bg)"/>
+  <g transform="translate(360,40)">
+    <g>
+      <rect width="40" height="40" fill="#2B2B3A"/><rect x="40" width="40" height="40" fill="#0E0E18"/><rect x="80" width="40" height="40" fill="#2B2B3A"/><rect x="120" width="40" height="40" fill="#0E0E18"/><rect x="160" width="40" height="40" fill="#2B2B3A"/><rect x="200" width="40" height="40" fill="#0E0E18"/>
+      <rect y="40" width="40" height="40" fill="#0E0E18"/><rect x="40" y="40" width="40" height="40" fill="#2B2B3A"/><rect x="80" y="40" width="40" height="40" fill="#0E0E18"/><rect x="120" y="40" width="40" height="40" fill="#2B2B3A"/><rect x="160" y="40" width="40" height="40" fill="#0E0E18"/><rect x="200" y="40" width="40" height="40" fill="#2B2B3A"/>
+      <rect y="80" width="40" height="40" fill="#2B2B3A"/><rect x="40" y="80" width="40" height="40" fill="#0E0E18"/><rect x="80" y="80" width="40" height="40" fill="#2B2B3A"/><rect x="120" y="80" width="40" height="40" fill="#0E0E18"/><rect x="160" y="80" width="40" height="40" fill="#2B2B3A"/><rect x="200" y="80" width="40" height="40" fill="#0E0E18"/>
+      <rect y="120" width="40" height="40" fill="#0E0E18"/><rect x="40" y="120" width="40" height="40" fill="#2B2B3A"/><rect x="80" y="120" width="40" height="40" fill="#0E0E18"/><rect x="120" y="120" width="40" height="40" fill="#2B2B3A"/><rect x="160" y="120" width="40" height="40" fill="#0E0E18"/><rect x="200" y="120" width="40" height="40" fill="#2B2B3A"/>
+      <rect y="160" width="40" height="40" fill="#2B2B3A"/><rect x="40" y="160" width="40" height="40" fill="#0E0E18"/><rect x="80" y="160" width="40" height="40" fill="#2B2B3A"/><rect x="120" y="160" width="40" height="40" fill="#0E0E18"/><rect x="160" y="160" width="40" height="40" fill="#2B2B3A"/><rect x="200" y="160" width="40" height="40" fill="#0E0E18"/>
+    </g>
+  </g>
+  <text x="40" y="160" font-family="Inter, sans-serif" font-weight="900" font-size="54" fill="#fff">Chess</text>
+  <text x="40" y="210" font-family="Inter, sans-serif" font-weight="900" font-size="54" fill="#F5C76A">Engine in C</text>
+  <text x="40" y="250" font-family="JetBrains Mono, monospace" font-size="14" fill="#aaa6c3">SDL2  ·  GNU Make  ·  FIDE-compliant</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ht-bg" x1="0" y1="0" x2="600" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#04101A"/>
+      <stop offset="1" stop-color="#0E3140"/>
+    </linearGradient>
+    <linearGradient id="ht-ac" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00CEA8"/>
+      <stop offset="1" stop-color="#56CCF2"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#ht-bg)"/>
+  <g stroke="url(#ht-ac)" stroke-width="2" fill="none">
+    <path d="M420 280l-10-80M440 260l5-90M470 250l15-95M500 260l25-80M390 290l-30-50"/>
+    <circle cx="420" cy="280" r="4" fill="url(#ht-ac)"/>
+    <circle cx="410" cy="200" r="4" fill="url(#ht-ac)"/>
+    <circle cx="445" cy="170" r="4" fill="url(#ht-ac)"/>
+    <circle cx="485" cy="155" r="4" fill="url(#ht-ac)"/>
+    <circle cx="525" cy="180" r="4" fill="url(#ht-ac)"/>
+    <circle cx="360" cy="240" r="4" fill="url(#ht-ac)"/>
+  </g>
+  <text x="40" y="160" font-family="Inter, sans-serif" font-weight="900" font-size="48" fill="#fff">Neural Hand</text>
+  <text x="40" y="210" font-family="Inter, sans-serif" font-weight="900" font-size="48" fill="url(#ht-ac)">Tracking</text>
+  <text x="40" y="250" font-family="JetBrains Mono, monospace" font-size="14" fill="#aaa6c3">MediaPipe  ·  Canvas  ·  WebRTC</text>
+</svg>

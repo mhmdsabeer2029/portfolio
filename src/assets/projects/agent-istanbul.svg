@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ai-bg" x1="0" y1="0" x2="600" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B0F0F"/>
+      <stop offset="1" stop-color="#5A1F1F"/>
+    </linearGradient>
+    <linearGradient id="ai-ac" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F5AF19"/>
+      <stop offset="1" stop-color="#F12711"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#ai-bg)"/>
+  <g opacity="0.5" stroke="url(#ai-ac)" stroke-width="2" fill="none">
+    <path d="M380 280c30-60 60-60 100-30M380 280c-10-80 30-100 80-90M380 280c-30-40-30-100 20-130"/>
+  </g>
+  <circle cx="490" cy="120" r="8" fill="url(#ai-ac)"/>
+  <text x="40" y="160" font-family="Inter, sans-serif" font-weight="900" font-size="52" fill="#fff">Agent</text>
+  <text x="40" y="210" font-family="Inter, sans-serif" font-weight="900" font-size="52" fill="url(#ai-ac)">Istanbul</text>
+  <text x="40" y="250" font-family="JetBrains Mono, monospace" font-size="14" fill="#dfd9ff">Multi-service marketing platform</text>
+</svg>
