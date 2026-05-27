@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sf-bg" x1="0" y1="0" x2="600" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1230"/>
+      <stop offset="1" stop-color="#1A2768"/>
+    </linearGradient>
+    <linearGradient id="sf-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F5C76A"/>
+      <stop offset="1" stop-color="#C19A4B"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#sf-bg)"/>
+  <g opacity="0.18" stroke="#F5C76A" stroke-width="1">
+    <circle cx="120" cy="80" r="2"/><circle cx="220" cy="120" r="2"/><circle cx="360" cy="60" r="2"/>
+    <circle cx="500" cy="140" r="2"/><circle cx="180" cy="240" r="2"/><circle cx="420" cy="280" r="2"/>
+    <path d="M120 80L220 120L360 60L500 140M180 240L420 280" />
+  </g>
+  <text x="40" y="170" font-family="Inter, sans-serif" font-weight="900" font-size="62" fill="url(#sf-gold)">ScriptFlow</text>
+  <text x="40" y="210" font-family="Inter, sans-serif" font-weight="600" font-size="18" fill="#dfd9ff">Premium SaaS landing platform</text>
+  <text x="40" y="240" font-family="JetBrains Mono, monospace" font-size="14" fill="#8a91c4">HTML5  ·  CSS3  ·  JavaScript</text>
+</svg>
